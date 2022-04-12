@@ -1,0 +1,32 @@
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #e99401;
+    right: 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.socialMedia{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+ 
+}
+.socialMedia img{
+    width: 40px;
+    padding: 20px;
+}
+.footerInfo{
+    a{text-decoration: none;
+    color: rgb(0, 0, 0);}
+
+}
