@@ -96,12 +96,12 @@ function App() {
                 <Route
                   path="/"
                   element={
-                    <RequireAuth>
-                      <HomePage
-                        books={search.length > 0 ? search : books}
-                        searchBook={searchBook}
-                      />
-                    </RequireAuth>
+                    // <RequireAuth>
+                    <HomePage
+                      books={search.length > 0 ? search : books}
+                      searchBook={searchBook}
+                    />
+                    // </RequireAuth>
                   }
                 />
                 <Route path="/login" element={<LoginPage />} />
