@@ -53,7 +53,11 @@ function App() {
             <Router>
               <nav className="nav">
                 <NavLink to="/">
-                  <img src="./assets/logo.png" alt="" />
+                  <img
+                    className="logo_nav"
+                    src="./assets/logo.png"
+                    alt="logo pagina principal bookstores"
+                  />
                 </NavLink>
 
                 <div className="container-search">
@@ -96,12 +100,12 @@ function App() {
                 <Route
                   path="/"
                   element={
-                    // <RequireAuth>
-                    <HomePage
-                      books={search.length > 0 ? search : books}
-                      searchBook={searchBook}
-                    />
-                    // </RequireAuth>
+                    <RequireAuth>
+                      <HomePage
+                        books={search.length > 0 ? search : books}
+                        searchBook={searchBook}
+                      />
+                    </RequireAuth>
                   }
                 />
                 <Route path="/login" element={<LoginPage />} />
